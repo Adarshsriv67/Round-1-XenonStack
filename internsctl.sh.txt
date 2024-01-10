@@ -1,6 +1,4 @@
-#!/bin/bash
 
-# Section A - Command Documentation
 function display_help() {
   echo "internsctl v0.1.0 - Custom Linux Command"
   echo "Usage: internsctl [command] [options]"
@@ -20,7 +18,7 @@ function display_help() {
   echo
 }
 
-# Section B - Command Execution
+
 function execute_command() {
   case $1 in
     "cpu" )
@@ -93,7 +91,7 @@ function execute_command() {
   esac
 }
 
-# Section A - Handle Command-line Arguments
+
 case $1 in
   "--help" )
     display_help
